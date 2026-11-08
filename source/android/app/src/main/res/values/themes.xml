@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/lk_bg</item>
+        <item name="android:statusBarColor">@color/lk_bg</item>
+        <item name="android:navigationBarColor">@color/lk_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:colorAccent">@color/lk_teal</item>
+        <item name="android:colorPrimary">@color/lk_teal</item>
+        <item name="android:colorPrimaryDark">@color/lk_bg</item>
+        <item name="android:textColorPrimary">@color/lk_text</item>
+        <item name="android:textColorSecondary">@color/lk_muted</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:alertDialogTheme">@style/LatchkeyDialog</item>
+    </style>
+
+    <style name="LatchkeyDialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/lk_dialog_bg</item>
+        <item name="android:colorAccent">@color/lk_teal</item>
+        <item name="android:textColorPrimary">@color/lk_text</item>
+        <item name="android:textColorSecondary">@color/lk_muted</item>
+    </style>
+</resources>

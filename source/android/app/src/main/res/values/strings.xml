@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Latchkey</string>
+    <string name="tagline">A keyed door to this device</string>
+    <string name="pill">LOCAL · ENCRYPTED · LOOPBACK</string>
+    <string name="label_status">STATUS</string>
+    <string name="label_files">FILE ACCESS</string>
+    <string name="label_assistant">ASSISTANT ACCESS</string>
+    <string name="label_key">ACCESS KEY</string>
+    <string name="status_stopped">Server stopped</string>
+    <string name="status_running">Listening on loopback</string>
+    <string name="status_error">Server error</string>
+    <string name="perm_granted">Granted</string>
+    <string name="perm_missing">Not granted</string>
+    <string name="btn_grant">Grant</string>
+    <string name="btn_copy">Copy key</string>
+    <string name="btn_regen">New key</string>
+    <string name="key_hidden">••••••••••••••  tap to reveal</string>
+    <string name="btn_start">Start server</string>
+    <string name="btn_stop">Stop server</string>
+    <string name="btn_battery">Battery</string>
+    <string name="btn_view_log">View log</string>
+    <string name="btn_export_log">Export log</string>
+    <string name="btn_clear_log">Clear log</string>
+    <string name="clear_log_title">Clear activity log?</string>
+    <string name="clear_log_message">This deletes the stored activity log and cannot be undone.</string>
+    <string name="pair_title">Pair an assistant</string>
+    <string name="pair_hint">Creates a 2-minute, single-use link and copies it. No key to paste.</string>
+    <string name="pair_copied">Link copied · valid for 2 minutes</string>
+    <string name="pair_btn">Pair assistant</string>
+    <string name="revoke_btn">Revoke</string>
+    <string name="clients_none">No assistants paired</string>
+    <string name="clients_one">1 assistant paired</string>
+    <string name="clients_many">%d assistants paired</string>
+    <string name="key_hint">Legacy key for older clients. Paired assistants don\'t need it.</string>
+    <string name="footer">Loopback only · AES-256-GCM authenticated · keys wrapped by Android Keystore · pairing links are single-use</string>
+</resources>

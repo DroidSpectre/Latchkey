@@ -1,0 +1,41 @@
+Latchkey source archive
+=======================
+Tag:          v1.2.3-grok+19
+versionName:  1.2.3-grok
+versionCode:  19
+Packaged:     2026-11-07T20:47:56Z
+
+This is the source used to build the APK in this release directory. It is
+complete except for the excluded items below.
+
+Included:
+  android/app/src/main/   Android app, manifest, Java, resources
+  client/                 dependency-free Node client
+  scripts/                Gradle-free build and packaging scripts
+  tests/                  self-test and crypto interop harness
+  docs/                   protocol and transport plans
+  bin/                    latchkey launcher
+  README.md PLAN.md SECURITY.md VERSIONS.md GROK_NOTES.md
+  FULL_ACCESS_PROBE_REPORT.md next-version.properties Dockerfile
+
+Excluded:
+  debug.keystore          local debug signing key (never publish)
+  .toolchain/             downloaded Android SDK (fetch-toolchain.sh)
+  tools/aapt2             optional vendored Android build tool
+  tools/r8.jar            optional vendored D8/R8 jar
+  build/                  build output
+  release APK/source copies
+
+Build requirements:
+  JDK 17 and Android SDK platform android-35 plus build-tools 35
+  (aapt2, d8.jar, zipalign, apksigner). Run scripts/fetch-toolchain.sh
+  or use the Dockerfile. The build script discovers JAVA_HOME,
+  ANDROID_SDK_ROOT / ANDROID_HOME, and build-tools. Overrides:
+  AAPT2, R8JAR, ANDROID_JAR, ZIPALIGN, APKSIGNER.
+
+The SHA-256 lines in README.md, SECURITY.md, and VERSIONS.md describe the
+published APK. Those files are not inputs to aapt/javac, so editing only
+the recorded hash does not change the APK.
+
+Source is provided as a snapshot, not a git repository. Preserve SHA-256
+hashes in the release SHA256SUMS file when sharing.
